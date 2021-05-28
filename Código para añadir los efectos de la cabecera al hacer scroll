@@ -1,0 +1,8 @@
+// Código para añadir los efectos de la cabecera al hacer scroll
+    jQuery(document).scroll(function() {
+        if ($(this).scrollTop() < 180) {
+            $("#barra-flotante").slideUp(200);
+        } else {
+            $("#barra-flotante").slideDown(300);
+        }
+    });
